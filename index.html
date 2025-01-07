@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklibrary</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="container">
+        <span class="logo">Ukibrary</span>
+        
+        <nav>
+            <ul>
+                <li class="active"><a href="/">Home</a></li>
+                <li class="#"><a href="about.html">About us</a></li>
+                <li class="#"><a href=" ">Your profile</a></li>
+                <li class="#"><a href="#">News</a></li>
+                <li class="btn"><a href="/contacts.html">contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="hero container">
+        <div class="hero--info">
+            <h2>Books</h2>
+            <h1>Read and relax with us</h1>
+            <p>The new comfortable web-lidrary for you</p>
+            <button class="btn">Get more details</button>
+        </div>
+        <img src="img/rb_81001.png" alt="">
+    </div>
+
+    <div class="container trending">
+        <a href="#" class="see-all">SEE ALL</a>
+        <h3>Currently trending books</h3>
+        
+        <div class="games">
+            <div class="block">
+                <img src="/img/book1.JPG" alt="">
+                <span><img src="/img/pngegg.png" alt="">In Top</span>
+            </div>
+            <div class="block">
+                <img src="/img/book2.JPG" alt="">
+                <span><img src="/img/pngegg.png" alt="">In Top</span>
+            </div>
+            <div class="block">
+                <img src="/img/book3.JPG" alt="">
+                <span><img src="/img/pngegg.png" alt="">In Top</span>
+            </div>
+            <div class="b4">
+                <img src="/img/book4.JPG" alt="">
+                <span><img src="/img/pngegg.png" alt="">In Top</span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    
+<div class="features">
+    <div class="container">
+        <h3>Categories of books that may interest you</h3>
+        <div class="info">
+            <div class="block">
+                <img src="/img/romance.JPG" alt="">
+                <a href="" class="romance">Romance</a>
+            </div>
+            <div class="block">
+                <img src="/img/fantasy.JPG" alt="">
+                <a href="" class="fantasy">Fantasy</a>
+            </div>
+            <div class="block">
+                <img src="/img/detective.JPG" alt="">
+                <a href="" class="detective">Detective</a>
+            </div>
+            <div class="block">
+                <img src="/img/science.JPG" alt="">
+                <a href="" class="science">Science fiction</a>
+            </div>
+            <div class="block1">
+                <img src="/img/thriller.JPG" alt="">
+                <a href="" class="thriller">Thriller</a>
+            </div>
+            <div class="block2">
+                <img src="/img/humor.JPG" alt="">
+                <a href="" class="humor">Humor</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container email">
+   
+    <div class="block">
+        <div>
+            <h2>Stay in the loop</h2>
+            <p>Subscribe to receive the latest news and updates about us!</p>
+        </div>
+        <div>
+            <input type="email" id="emailField" placeholder="Enter email address">
+            <button onclick="checkEmail()">Continue</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="blocks container">
+        <div>
+            <span class="logo">Ukibrary</span>
+        </div>
+        <div>
+            <h4>About us</h4>
+            <ul>
+                <li>Portfolio</li>
+                <li>Careers</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact us</h4>
+            <p>+981251958195</p>
+            <p>+821742819515</p>
+        </div>
+    </div>
+    <hr>
+    <p>2024 Corparate Ukbrirary found in Ukraine</p>
+</footer>
+<script>
+    function checkEmail() {
+        let email = document.querySelector('#emailField').value;
+        if(!email.includes('@')) alert('Нет символа @');
+        else if(!email.includes('.')) alert('Нет символа .');
+        else alert('Все отлично!');
+        
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklibrary</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+    <header class="container">
+        <span class="logo">Ukibrary</span>
+        
+        <nav>
+            <ul>
+                <li class="active"><a href="/">Home</a></li>
+                <li class="#"><a href="about.html">About us</a></li>
+                <li class="#"><a href=" ">Your profile</a></li>
+                <li class="#"><a href="#">News</a></li>
+                <li class="btn"><a href="/contacts.html">contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+   
+    
+</div>
+<div class="container hero-contacts">
+    <h1>technical support</h1>
+    
+    
+    
+</div>
+
+<div class="feedback">
+    <div class="container">
+        <h2>Contact us</h2>
+        <p>leave your email address and we will contact you shortly</p>
+
+        <form>
+            <div class="inline">
+                <div>
+                    <label>First name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Last name</label>
+                    <input type="text">
+                </div>
+            </div>
+            <label>Email Adress</label>
+            <input type="email">
+
+            <label>Message</label>
+            <textarea  class="one-line"></textarea> 
+
+            <button type="button">Get intouch</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="blocks container">
+        <div>
+            <span class="logo">Ukibrary</span>
+        </div>
+        <div>
+            <h4>About us</h4>
+            <ul>
+                <li>Portfolio</li>
+                <li>Careers</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact us</h4>
+            <p>+981251958195</p>
+            <p>+821742819515</p>
+        </div>
+    </div>
+    <hr>
+    <p>2024 Corparate Ukbrirary found in Ukraine</p>
+</footer>
+<script>
+    function checkEmail() {
+        let email = document.querySelector('#emailField').value;
+        if(!email.includes('@')) alert('Нет символа @');
+        else if(!email.includes('.')) alert('Нет символа .');
+        else alert('Все отлично!');
+        
+    }
+</script>
+</body>
+</html>
